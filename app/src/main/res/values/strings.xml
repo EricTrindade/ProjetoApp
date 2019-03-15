@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Calcular peso</string>
+    <string-array name="Operadoras">
+        <item>OP1</item>
+        <item>OP2</item>
+        <item>OP3</item>
+    </string-array>
 </resources>

@@ -5,37 +5,35 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity" tools:layout_editor_absoluteY="81dp">
 
     <Button
             android:text="Calcular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/calcular" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintVertical_bias="0.449"/>
+            android:id="@+id/calcular"
+            android:onClick="calcularPesoIdeal"
+            app:layout_constraintTop_toBottomOf="@+id/sexor" android:layout_marginBottom="45dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/tela"
+            app:layout_constraintStart_toStartOf="parent"/>
     <EditText
             android:layout_width="157dp"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
             android:id="@+id/alturar"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/button7" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:hint="digite sua altura..."/>
+            android:hint="digite sua altura..."
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="21dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/sexor" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
     <RadioGroup
             android:layout_width="220dp"
-            android:layout_height="35dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.505"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
-            app:layout_constraintVertical_bias="0.279" android:orientation="horizontal" android:id="@+id/sexor">
+            android:layout_height="0dp"
+            android:orientation="horizontal" android:id="@+id/sexor"
+            app:layout_constraintTop_toBottomOf="@+id/alturar" android:layout_marginBottom="34dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/calcular"
+            app:layout_constraintStart_toStartOf="parent">
         <RadioButton
                 android:text="Feminino"
                 android:layout_width="wrap_content"
@@ -45,4 +43,12 @@
                 android:layout_width="86dp"
                 android:layout_height="wrap_content" android:id="@+id/RBM" android:layout_weight="1"/>
     </RadioGroup>
+    <TextView
+            android:layout_width="66dp"
+            android:layout_height="0dp"
+            android:id="@+id/tela"
+            tools:textSize="36sp"
+            app:layout_constraintTop_toBottomOf="@+id/calcular" android:layout_marginBottom="135dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 </android.support.constraint.ConstraintLayout>

@@ -1,15 +1,18 @@
 package com.example.a26146045.aula13_03;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private RadioGroup sexo;
     private EditText altura;
+    private TextView tela;
     double resultado;
 
     @Override
@@ -19,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         sexo=findViewById(R.id.sexor);
         altura=findViewById(R.id.alturar);
+        tela=findViewById(R.id.tela);
+
+
     }
 
     public void calcularPesoIdeal(View sc){
@@ -33,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             resultado= (alt*72.7)-58;
 
         }
+        tela.setText("Seu peso ideal "+resultado);
 
     }
 }
