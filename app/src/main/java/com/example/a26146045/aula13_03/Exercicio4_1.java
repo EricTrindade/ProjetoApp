@@ -15,6 +15,7 @@ public class Exercicio4_1 extends AppCompatActivity {
     private EditText distancia;
     private EditText modelo;
     double resultado;
+    String res;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,12 +45,22 @@ public class Exercicio4_1 extends AppCompatActivity {
         }
 
         resultado=(dist/multiplicador)*gas;
-        DecimalFormat d = new DecimalFormat("0.00");
-        d.format(resultado);
+        DecimalFormat d = new DecimalFormat("00.00");
+        res =d.format(resultado);
+        System.out.println(res);
+
+
 
 
         Intent i = new Intent(this,Exercicio4_2.class);
-        i.putExtra("resultado",resultado);
+        i.putExtra("resultado",res);
+        i.putExtra("modelo",modelo.getText().toString());
+        i.putExtra("distancia",distancia.getText().toString());
+        i.putExtra("valorGasolina", valorGasolina.getText().toString());
+        i.putExtra("potencia",potencia.getText().toString());
         startActivity(i);
+
+
+
     }
 }
