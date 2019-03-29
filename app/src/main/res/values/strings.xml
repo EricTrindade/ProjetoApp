@@ -5,4 +5,14 @@
         <item>OP2</item>
         <item>OP3</item>
     </string-array>
+
+    <string name="planeta">calcular peso planeta</string>
+    <string-array name="Planetas">
+        <item>Mercúrio</item>
+        <item>Vênus</item>
+        <item>Marte</item>
+        <item>Júpiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+    </string-array>
 </resources>

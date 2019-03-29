@@ -21,7 +21,8 @@ public class Exercicio4_2 extends AppCompatActivity {
 
         tela.setText(dados.getString("modelo")+" "+dados.getString("potencia")+" gasta R$"+dados.getString("resultado")+" para percorer "+
                 dados.getString("distancia")+"km com gasolina a "+dados.getString("valorGasolina")+" por litro.");
-        tudo=(dados.getString("modelo")+" "+dados.getString("potencia")+" gasta R$"+dados.getString("resultado")+" para percorer "+
+
+        tudo = (dados.getString("modelo")+" "+dados.getString("potencia")+" gasta R$"+dados.getString("resultado")+" para percorer "+
                 dados.getString("distancia")+"km com gasolina a "+dados.getString("valorGasolina")+" por litro.");
 
     }

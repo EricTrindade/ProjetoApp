@@ -36,7 +36,26 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Exercicio4_2" android:label="Resultado">
+        <activity
+                android:name=".Exercicio4_2"
+                android:label="Resultado">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Exercicio5"
+                android:label="Peso em outro planeta :P">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Exercicio6"
+                  android:label="Calcular Y">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
